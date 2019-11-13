@@ -16,6 +16,15 @@ const EmailForm = styled.div`
   display: flex;
   flex-direction: row;
   width: 100%;
+  @media (max-width: 768px){
+   flex-direction:column;
+   margin-left:20%;
+   width:80%;
+   margin-top:20px;
+  }
+  @media (max-width:320px){
+    width:100%;
+  }
 `;
 
 const Input = styled.input`
@@ -34,6 +43,10 @@ const Input = styled.input`
   &::placeholder {
     color: rgba(255, 255, 255, 0.9);
   }
+  @media (max-width:768px){
+    text-align:center;
+
+  }
 `;
 
 const Submit = styled.button`
@@ -47,5 +60,9 @@ const Submit = styled.button`
   cursor: pointer;
   &:focus {
     outline: none;
+  }
+  @media (max-width:768px){
+    margin-top:10px;
+    margin-left:20%;
   }
 `;
