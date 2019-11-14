@@ -17,7 +17,8 @@ export default function Icons(props) {
 const Icon = styled.img`
   width: 30px;
   height: 30px;
-  margin: 0 10px;
+  margin: 0 18px;
   filter: drop-shadow(0 0 10px #fea999);
   cursor: pointer;
+  
 `;
