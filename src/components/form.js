@@ -15,15 +15,15 @@ export default function Form(props) {
 const EmailForm = styled.div`
   display: flex;
   flex-direction: row;
+  justify-content: center;
   width: 100%;
-  @media (max-width: 768px){
-   flex-direction:column;
-   margin-left:20%;
-   width:80%;
-   margin-top:20px;
+  @media (max-width: 768px) {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
   }
-  @media (max-width:320px){
-    width:100%;
+  @media (max-width: 320px) {
+    width: 100%;
   }
 `;
 
@@ -43,9 +43,8 @@ const Input = styled.input`
   &::placeholder {
     color: rgba(255, 255, 255, 0.9);
   }
-  @media (max-width:768px){
-    text-align:center;
-
+  @media (max-width: 768px) {
+    text-align: center;
   }
 `;
 
@@ -53,6 +52,7 @@ const Submit = styled.button`
   width: 30%;
   border: none;
   font-size: 20px;
+  padding: 5px;
   background-color: rgba(54, 54, 54, 0.75);
   border-radius: 10px;
   color: rgba(255, 255, 255, 0.9);
@@ -61,8 +61,7 @@ const Submit = styled.button`
   &:focus {
     outline: none;
   }
-  @media (max-width:768px){
-    margin-top:10px;
-    margin-left:20%;
+  @media (max-width: 768px) {
+    margin-top: 10px;
   }
 `;

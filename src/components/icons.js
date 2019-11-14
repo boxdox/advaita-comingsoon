@@ -20,10 +20,4 @@ const Icon = styled.img`
   margin: 0 10px;
   filter: drop-shadow(0 0 10px #fea999);
   cursor: pointer;
-  @media (max-width:768px){
-    padding-left:26%;
-  }
-  @media (max-width:320px){
-    padding-left:22%;
-  }
 `;
