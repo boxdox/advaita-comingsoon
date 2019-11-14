@@ -20,19 +20,24 @@ const GlobalStyle = createGlobalStyle`
 body {
     margin: 0;
     padding: 0;
+    overflow:hidden;
+    height:100%;
     box-sizing: border-sizing;
     background: url(${bg});
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center; 
+  
 }
 `;
+
 
 export default class App extends React.Component {
   render() {
     return (
       <React.Fragment>
+        
         <GlobalStyle />
         <ParticleBG params={ParticlesConfig} />
         <Wrapper>
@@ -40,10 +45,10 @@ export default class App extends React.Component {
             <Logo src={logo} />
             <ComingSoon>Coming Soon</ComingSoon>
             <Form />
-          </Container>
-          <SocialIcons>
-            <Icons />
-          </SocialIcons>
+            <SocialIcons>
+              <Icons />
+            </SocialIcons>
+          </Container>    
         </Wrapper>
       </React.Fragment>
     );
@@ -88,6 +93,9 @@ const ComingSoon = styled.h1`
   font-size: 72px;
   margin-top: 0px;
   user-select: none;
+  
+  
+  
   @media (max-width: 768px) {
     margin-top: 20px;
     font-size: 250%;
@@ -95,10 +103,11 @@ const ComingSoon = styled.h1`
 `;
 
 const SocialIcons = styled.div`
-  position: absolute;
+ 
   display: flex;
-  bottom: 20px;
-  left: 10px;
+  position:absolute;
+  bottom:10px;
+
   @media (max-width: 768px) {
     width: 95vw;
     display: flex;
