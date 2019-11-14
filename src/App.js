@@ -57,6 +57,9 @@ const ParticleBG = styled(Particles)`
   top: 0;
   left: 0;
   z-index: -1000;
+  @media (max-width:768px){
+    width:
+  }
 `;
 
 const Wrapper = styled.div`
@@ -76,6 +79,9 @@ const Container = styled.div`
 
 const Logo = styled.img`
   width: 500px;
+  @media (max-width:768px){
+    width:90%;
+  }
 `;
 
 const ComingSoon = styled.h1`
@@ -84,10 +90,21 @@ const ComingSoon = styled.h1`
   text-align: center;
   font-size: 72px;
   margin-top: 0px;
+  @media (max-width:768px){
+    margin-top:20px;
+    font-size:250%;
+  }
 `;
 
 const SocialIcons = styled.div`
   position: absolute;
+  display: flex;
   bottom: 20px;
   left: 10px;
+
 `;
+/*@media (max-width:768px){
+  width:86%;
+  display: flex;
+  justify-content: space-evenly;
+}*/

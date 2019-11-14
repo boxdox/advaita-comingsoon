@@ -6,17 +6,13 @@ import Instagram from "../images/instagram.png";
 
 export default function Icons(props) {
   return (
-    <SocialIcons>
+    <React.Fragment>
       <Icon src={Facebook} />
       <Icon src={Twitter} />
       <Icon src={Instagram} />
-    </SocialIcons>
+    </React.Fragment>
   );
 }
-
-const SocialIcons = styled.div`
-  display: flex;
-`;
 
 const Icon = styled.img`
   width: 30px;
@@ -24,4 +20,10 @@ const Icon = styled.img`
   margin: 0 10px;
   filter: drop-shadow(0 0 10px #fea999);
   cursor: pointer;
+  @media (max-width:768px){
+    padding-left:26%;
+  }
+  @media (max-width:320px){
+    padding-left:22%;
+  }
 `;
