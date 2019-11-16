@@ -41,7 +41,7 @@ const Input = styled.input`
     outline: none;
   }
   &::placeholder {
-    color: rgba(255, 255, 255, 0.9);
+    color: rgba(255, 255, 255, 0.75);
   }
   @media (max-width: 768px) {
     text-align: center;

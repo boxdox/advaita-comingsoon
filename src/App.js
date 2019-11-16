@@ -20,36 +20,45 @@ const GlobalStyle = createGlobalStyle`
 body {
     margin: 0;
     padding: 0;
-    overflow:hidden;
-    height:100%;
+    min-height: 100vh;
+    min-height: calc(var(--vh, 1vh) * 100);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     box-sizing: border-sizing;
-    background: url(${bg});
+    background-color: #191114;
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAADCAYAAABbNsX4AAAASklEQVQYVwE/AMD/AQEFCf8LCQwAZDAsAJjO0gD5+fcAARoREP/z/gQA/AABAAYBAAD8+fYAAR0QD//7AwUAJgoGANXz9wAO+/sAe+UVaElEZWcAAAAASUVORK5CYII=);
+    background-image: url(${bg});
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center; 
-  
+    @media(max-width: 425px) {
+      overflow-y: hidden;
+    }
 }
 `;
 
-
 export default class App extends React.Component {
+  componentDidMount() {
+    let vh = window.innerHeight * 0.01;
+    document.documentElement.style.setProperty("--vh", `${vh}px`);
+  }
   render() {
     return (
       <React.Fragment>
-        
         <GlobalStyle />
         <ParticleBG params={ParticlesConfig} />
         <Wrapper>
-          <Container>
-            <Logo src={logo} />
-            <ComingSoon>Coming Soon</ComingSoon>
-            <Form />
-            <SocialIcons>
-              <Icons />
-            </SocialIcons>
-          </Container>    
+          <Logo src={logo} />
+          <ComingSoon>Coming Soon</ComingSoon>
+          <Form />
         </Wrapper>
+        <SocialIcons>
+          <Icons />
+        </SocialIcons>
       </React.Fragment>
     );
   }
@@ -64,23 +73,22 @@ const ParticleBG = styled(Particles)`
   z-index: -1000;
 `;
 
-const Wrapper = styled.div`
+const Wrapper = styled.main`
   display: flex;
-  justify-content: center;
   align-items: center;
-  height: 100vh;
-  z-index: 1000;
-`;
-
-const Container = styled.div`
-  display: flex;
   flex-direction: column;
-  align-items: center;
+  flex: 1 0 auto;
+  height: 100%;
   width: 500px;
+  z-index: 1000;
+  @media (max-width: 768px) {
+    width: 100%;
+  }
 `;
 
 const Logo = styled.img`
   width: 500px;
+  filter: drop-shadow(0 0 10px #000);
   @media (max-width: 768px) {
     width: 90%;
   }
@@ -93,9 +101,7 @@ const ComingSoon = styled.h1`
   font-size: 72px;
   margin-top: 0px;
   user-select: none;
-  
-  
-  
+  filter: drop-shadow(0 0 100px #000);
   @media (max-width: 768px) {
     margin-top: 20px;
     font-size: 250%;
@@ -103,14 +109,11 @@ const ComingSoon = styled.h1`
 `;
 
 const SocialIcons = styled.div`
- 
-  display: flex;
-  position:absolute;
-  bottom:10px;
-
+  text-align: center;
+  margin-top: 20px;
+  flex-shrink: 0;
   @media (max-width: 768px) {
-    width: 95vw;
-    display: flex;
+    width: 100%;
     justify-content: space-evenly;
   }
 `;
