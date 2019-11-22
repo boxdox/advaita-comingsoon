@@ -40,6 +40,11 @@
       </main>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
-    <script src="js/main.js"></script>
+    <script>
+      particlesJS.load("particles", "particles.json");
+
+      let vh = window.innerHeight * 0.01;
+      document.documentElement.style.setProperty("--vh", `${vh}px`);
+    </script>
   </body>
 </html>

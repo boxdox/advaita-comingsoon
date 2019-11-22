@@ -1,5 +1,4 @@
 @import "reset";
-@import "variables";
 
 @font-face {
   font-family: arabian;
@@ -97,7 +96,7 @@ main {
 
 #social-icons {
   text-align: center;
-  margin-top: 20px;
+  margin-top: 30px;
   flex-shrink: 0;
   img {
     width: 30px;
