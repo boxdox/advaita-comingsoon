@@ -7,6 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" content="Coming Soon. Advaita 2020" />
     <link rel="stylesheet" href="css/main.css" />
+    <link
+      rel="shortcut icon"
+      href="data:image/x-icon;base64,AAABAAEAEBAAAAEAIABoBAAAFgAAACgAAAAQAAAAIAAAAAEAIAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACJdLAAiXSwAYl0sACJdLAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACOaKIAk2qgAX9ipQx4X6cDeV+nAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAfWGgAINloAhzXKMaaVixAm1arAAAAAAAAAAAAAAAAAAAAAAAc2ShAHJjoBN1Z6ISdGaiAAAAAAAAAAAAe2KvAEdLlwBdVaMfblujGGZYoQCVd8kAAAAAAAAAAAAAAAAAmHOZAAAA/wBRYKpAUWSuTs+BkgKEb6IAAAAAAFlOnwBaT6EIW0+eNWhXnwljVJ4AAAAAAAAAAAAAAAAAAAAAAGRnpQBxaqQLS1+pZkZgq3NjZaAWWGOiAAAAAABSTJ8AVE2fJlFNnjEAJaIAm3CbAAAAAAAAAAAAAAAAAOiZrwBEX6wAVGKrJ05jrWJGXKZYR1ynTLhVnQFVTqMASkikBERDn0NRSqEYS0agAAAAAAAAAAAAAAAAAAAAAACXeKgA/JSlAlZnqklVZqw5WGqzKjxVpnJTTp0VQkefAEVHohxAQp5IhF2VBG5UmAAAAAAAAAAAAAAAAAAAAAAATV6tAFRfqxBTZK5Sd3ivD455nQY7S59iN0CiSf+qyAI5PqZDOz6hKzg8owD//wAAAAAAAAAAAAAAAAAA95+/ADNToABJW6EySFymQ///fwAYMKIAPEOjLS85pHlCQ6MjOT6jVExIowxFRaMAAAAAAAAAAAAAAAAAAAAAAG9mmQB4aJYGVF+iSVxjphhUYKYAUkyXAGRWlgcyOpdeNDqdcjM6mjwAAJIAkW6eAAAAAAAAAAAAAAAAAAAAAABVW50AXFydGVRdoDmdc6kCfWmlAP+jkgAfMKIARUSfJzM6oYNFRKEdPUChAAAAAAAAAAAAAAAAAAAAAACgeaIA/JegAXNqoipkZaQYZ2ajAAAAAAAAAAAAR0WlAE9IpAtAQqY7P0SoCD5DpwAAAAAAAAAAAAAAAAAAAAAAfmmcAIJqmwl2ZqAoa2OnBG1kpgAAAAAAAAAAALiAnwC9g54AoHOkA4NkqgCIZ6kAAAAAAAAAAAAAAAAAAAAAAH9noQCDaaEQeGOhEl1coQD1h6AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACOdawAjnWrBY9ysAKPc64AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA//sAAP/xAAD/8QAA+fMAAPjjAADw5wAA8EcAAOBHAADgDwAA5g8AAMYfAADHHwAAjx8AAI+/AACf/wAAn/8AAA=="
+    />
   </head>
 
   <body>
@@ -18,13 +22,13 @@
       <main>
         <img src="img/logo.png" alt="advaita 2020 logo" />
         <h1>Coming Soon</h1>
-        <form>
+        <form id="email-notification">
           <input
             type="email"
             name="email"
             placeholder="Get Notified via Email"
           />
-          <button>Submit</button>
+          <button id="submit-btn">Submit</button>
         </form>
         <div id="social-icons">
           <a
@@ -41,7 +45,7 @@
             rel="noreferrer"
           >
             <img
-              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAMAAAAM7l6QAAABS2lUWHRYTUw6Y29tLmFkb2JlLnhtcAAAAAAAPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4KPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iQWRvYmUgWE1QIENvcmUgNS42LWMxNDIgNzkuMTYwOTI0LCAyMDE3LzA3LzEzLTAxOjA2OjM5ICAgICAgICAiPgogPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4KICA8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0iIi8+CiA8L3JkZjpSREY+CjwveDp4bXBtZXRhPgo8P3hwYWNrZXQgZW5kPSJyIj8+nhxg7wAAAARnQU1BAACxjwv8YQUAAAABc1JHQgCuzhzpAAAA9lBMVEUAAAD4p5n4p5n4p5n4p5n4p5n4p5n4p5n4p5n4p5n4p5n4p5n4p5n4p5n4p5n4p5n4p5n4p5n4p5n4p5n4p5n4p5n4p5n4p5n4p5n4p5n4p5n4p5n4p5n4p5n4p5n4p5n4p5n4p5n4p5n4p5n4p5n4p5n4p5n4p5n4p5n4p5n4p5n4p5n4p5n4p5n4p5n4p5n4p5n4p5n4p5n4p5n4p5n4p5n4p5n4p5n4p5n4p5n4p5n4p5n4p5n4p5n4p5n4p5n4p5n4p5n4p5n4p5n4p5n4p5n4p5n4p5n4p5n4p5n4p5n4p5n4p5n4p5n4p5n4p5n4p5n4p5liNXvgAAAAUXRSTlMAO/G+Ss3OsqJX9rq2nf1f2fVRVqBJliVLzKuGkNG0GS3rGhuFLq8QeaeNR883evgkKtCZPt3sHozDTMaqifCle/q1BemS0pRPYlCDx6xCTkNB8U35AAAA30lEQVQoz8WTWVMCMRCEB5AFVpZzuQXkRm65BLnlkFv6//8Z48NSuGQeLfshVV1fJTPpSYj+U3M/GC0ORJ/wuB1SffihE3xL9mAFhB1fNyDw1jCVhhmfBQ4apo1e4DcOCewyjKMJDLu3+OEW260tDSgWGFwDUf0R0N7ku/GzVu3AoMRiIpcP/XKaxUSigpvF7yOo+QiDLTagk5PUFgnTcxwYv0o7V6zZJ8BmYe6dUoFk1JzaNfMYMt77zPeGCSfME7sI7OXn/SXwhsdHkI7pi1Oq2QonoomHe6lY/+0f+QY0HTVYxlCW6gAAAABJRU5ErkJggg=="
+              src="data:image/png;base64,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"
               alt="youtube"
             />
           </a>
@@ -57,27 +61,6 @@
       </main>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
-    <script>
-      let vh = window.innerHeight * 0.01;
-      document.documentElement.style.setProperty("--vh", `${vh}px`);
-      document.addEventListener(
-        "DOMContentLoaded",
-        function() {
-          particlesJS.load("particles", "particles.json");
-        },
-        false
-      );
-      document.onreadystatechange = function() {
-        let state = document.readyState;
-        if (state == "interactive") {
-          document.querySelector("#container").style.visibility = "hidden";
-        } else if (state == "complete") {
-          setTimeout(function() {
-            document.querySelector("#preloader").style.visibility = "hidden";
-            document.querySelector("#container").style.visibility = "visible";
-          }, 1000);
-        }
-      };
-    </script>
+    <script src="js/main.js"></script>
   </body>
 </html>
